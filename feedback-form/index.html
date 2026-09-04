@@ -53,20 +53,5 @@
         <footer>
             <p>软件开发综合实践.课程演示案例</p>
         </footer>
-        <script>
-            var advice = document.getElementById('advice');
-            var limit = advice.getAttribute('maxlength');
-            var warned = false;
-            advice.addEventListener('input', function () {
-                if (this.value.length >= limit) {
-                    if (!warned) {
-                        alert('已达 ' + limit + ' 字上限');
-                        warned = true;
-                    }
-                } else {
-                    warned = false;
-                }
-            });
-        </script>
     </body>
     </html>
