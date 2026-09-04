@@ -20,7 +20,40 @@
                 <h2>填写说明</h2>
                 <p>请本人如实填写，切勿代为填写，本表格仅可填写一次</p>
             </section>
-        
+        <form id="form" action="#" method="get">
+                <p>
+                    <label for="name">姓名（可填昵称）</label>
+                    <input type="text" id="name" name="name" placeholder="怎么称呼你" required>
+                </p>
+                <p>
+                    <label for="email">邮箱</label>
+                    <input type="email" id="mail" name="mail" required>
+                </p>
+                <p>选择社团</p>
+                <p>第一志愿</p>
+                <p>
+                    <label><input type="radio" name="score" value="1" checked>艺术社</label>
+                    <label><input type="radio" name="score" value="2" checked>动漫社</label>
+                    <label><input type="radio" name="score" value="3" checked>游戏社</label>
+                    <label><input type="radio" name="score" value="4" checked>学生会</label>
+                    <label><input type="radio" name="score" value="5" checked>红十字</label>
+                </p>
+                 <p>第二志愿</p>
+                 <p>
+                    <label><input type="radio" name="score" value="1" checked>艺术社</label>
+                    <label><input type="radio" name="score" value="2" checked>动漫社</label>
+                    <label><input type="radio" name="score" value="3" checked>游戏社</label>
+                    <label><input type="radio" name="score" value="4" checked>学生会</label>
+                    <label><input type="radio" name="score" value="5" checked>红十字</label>
+                 </p>
+                 <p>
+                    <label for="advice">改进建议（例如希望新增社团）</label><br>
+                    <textarea id="advice" name="advice" rows="4" maxlength="200" placeholder="说点什么"></textarea>
+                 </p>
+                <p>
+                    <button type="submit">提交反馈</button>
+                </p>
+            </form>
         </main>
         <footer>
             <p>xx大学学生服务</p>
