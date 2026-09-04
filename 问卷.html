@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>社团报名</title>
+    </head>
+    <body>
+        <header>
+            <h1>社团报名</h1>
+            <p>丰富你的大学生活</p>
+        </header>
+        <nav>
+            <a href="#intro">填写说明</a>
+            <a href="#form">开始填写</a>
+        </nav>
+        <main>
+            <section id="intro">
+                <h2>填写说明</h2>
+                <p>请本人如实填写，切勿代为填写，本表格仅可填写一次</p>
+            </section>
+        
+        </main>
+        <footer>
+            <p>xx大学学生服务</p>
+        </footer>
+        <script>
+            var advice = document.getElementById('advice');
+            var limit = advice.getAttribute('maxlength');
+            var warned = false;
+            advice.addEventListener('input', function () {
+                if (this.value.length >= limit) {
+                    if (!warned) {
+                        alert('已达 ' + limit + ' 字上限');
+                        warned = true;
+                    }
+                } else {
+                    warned = false;
+                }
+            });
+        </script>
+    </body>
+    </html>
